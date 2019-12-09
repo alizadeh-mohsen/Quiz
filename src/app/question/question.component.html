@@ -1,14 +1,25 @@
 <mat-card>
-<mat-card-content>
-        
-<form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Question" name="question" [(ngModel)]="question" >
-    </mat-form-field>
-  </form>
-</mat-card-content>
-<mat-card-actions>
-    <button mat-button (click)="post()" >Post</button>
-    
+  <mat-card-title>Quiz Match!</mat-card-title>
+  <mat-card-content>
+    <form>
+      <mat-form-field class="fullWidth">
+        <input matInput placeholder="Question" name="text" [(ngModel)]="text" />
+      </mat-form-field>
+      <mat-form-field class="fullWidth">
+        <input matInput placeholder="Correct Answer" name="correctAnswer" [(ngModel)]="correctAnswer" />
+      </mat-form-field>
+      <mat-form-field class="fullWidth">
+        <input matInput placeholder="Wrong Answer 1" name="wrongAnswer1" [(ngModel)]="wrongAnswer1" />
+      </mat-form-field>
+      <mat-form-field class="fullWidth">
+        <input matInput placeholder="Wrong Answer 2" name="wrongAnswer2" [(ngModel)]="wrongAnswer2" />
+      </mat-form-field>
+      <mat-form-field class="fullWidth">
+        <input matInput placeholder="Wrong Answer 3" name="wrongAnswer3" [(ngModel)]="wrongAnswer3" />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="post()">Post</button>
   </mat-card-actions>
-
+</mat-card>
